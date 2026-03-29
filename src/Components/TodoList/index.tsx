@@ -1,4 +1,10 @@
+import { themeConfig } from "../../contexts/theme";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import { useContext } from "react";
+
 const TodoList = () => {
+    const { theme } = useContext(ThemeContext);
+
     const todos = [
         { id: 1, text: "Todo 1" },
         { id: 2, text: "Todo 2" },
@@ -6,18 +12,18 @@ const TodoList = () => {
     ];
 
     return (
-        <div className="bg-dark-desaturated-blue rounded-md">
+        <div className={`${themeConfig[theme].todo.backgroundColor} rounded-md`}>
             <ul>
                 {todos.map((todo) => (
-                    <li key={todo.id} className="flex items-center text-muted-gray p-6 text-lg border-b border-dark-grayish-blue gap-4">
-                        <button className="w-6 h-6 border border-dark-grayish-blue rounded-full cursor-pointer"></button>
+                    <li key={todo.id} className={`flex items-center ${themeConfig[theme].todo.textColor} p-6 text-lg border-b ${themeConfig[theme].todo.borderColor} gap-4`}>
+                        <button className={`w-6 h-6 border ${themeConfig[theme].todo.borderColor} rounded-full cursor-pointer`}></button>
 
                         <p>{todo.text}</p>
                     </li>
                 ))}
             </ul>
 
-            <div className="flex justify-between text-muted-gray p-4">
+            <div className={`flex justify-between ${themeConfig[theme].filter.textColor} text-sm px-6 py-4`}>
                 <p>{todos.length} items left</p>
 
                 <div className="flex gap-4">
