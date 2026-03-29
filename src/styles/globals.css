@@ -5,14 +5,14 @@
     src: url(/fonts/JosefinSans-Regular.woff) format('woff');
     font-weight: 400;
     font-style: normal;
-  }
+  };
 
   @font-face {
     font-family: 'Josefin Sans';
     src: url(/fonts/JosefinSans-Bold.woff) format('woff');
     font-weight: 700;
     font-style: normal;
-  }
+  };
 
 @theme {
     /* Primary */
@@ -21,7 +21,7 @@
 
   /* Light Theme */
   --color-off-white: hsl(0, 0%, 98%);
-  --color-light-lavender: hsl(234, 39%, 85%);
+  --color-soft-lavender: hsl(236, 33%, 92%);
   --color-light-grayish: hsl(233, 11%, 84%);
   --color-muted-gray: hsl(236, 9%, 61%);
   --color-dark-grayish-blue: hsl(235, 19%, 35%);
@@ -30,15 +30,25 @@
   --color-very-dark-blue: hsl(235, 21%, 11%);
   --color-dark-desaturated-blue: hsl(235, 24%, 19%);
   --color-light-lavender: hsl(234, 39%, 85%);
-  --color-soft-lavender: hsl(236, 33%, 92%);
+  --color-soft-lavender-hover: hsl(236, 33%, 92%);
   --color-muted-gray: hsl(236, 9%, 61%);
   --color-desaturated-blue: hsl(235, 16%, 43%);
   --color-dark-slate-blue: hsl(233, 14%, 35%);
   --color-deep-navy: hsl(237, 14%, 26%);
 
   --font-primary: 'Josefin Sans', sans-serif;
-}
+};
 
 body {
     font-family: var(--font-primary);
-}
+};
+
+@layer base {
+  .theme-light{
+    @apply bg-[url("/images/bg-desktop-light.jpg")] bg-cover bg-no-repeat bg-center h-80
+  };
+
+  .theme-dark{
+    @apply bg-[url("/images/bg-desktop-dark.jpg")] bg-cover bg-no-repeat bg-center h-80
+  };
+};
