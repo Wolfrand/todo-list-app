@@ -15,7 +15,8 @@ export const themeConfig = {
             textColor: "text-dark-grayish-blue"
         },
         filter: {
-            textColor: "text-muted-gray"
+            textColor: "text-muted-gray",
+            hover: "hover:text-dark-grayish-blue"
         },
         icon: IconMoon
     },
@@ -33,7 +34,8 @@ export const themeConfig = {
             textColor: "text-light-lavender"
         },
         filter: {
-            textColor: "text-desaturated-blue"
+            textColor: "text-desaturated-blue",
+            hover: "hover:text-soft-lavender-hover"
         },
         icon: IconSun
     }
