@@ -26,6 +26,8 @@
   --color-muted-gray: hsl(236, 9%, 61%);
   --color-dark-grayish-blue: hsl(235, 19%, 35%);
 
+  --shadow-card-light: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
   /* Dark Theme */
   --color-very-dark-blue: hsl(235, 21%, 11%);
   --color-dark-desaturated-blue: hsl(235, 24%, 19%);
@@ -35,6 +37,8 @@
   --color-desaturated-blue: hsl(235, 16%, 43%);
   --color-dark-slate-blue: hsl(233, 14%, 35%);
   --color-deep-navy: hsl(237, 14%, 26%);
+
+  --shadow-card-dark: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
   --font-primary: 'Josefin Sans', sans-serif;
 };

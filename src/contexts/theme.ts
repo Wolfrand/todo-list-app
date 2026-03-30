@@ -12,7 +12,8 @@ export const themeConfig = {
         todo: {
             backgroundColor: "bg-off-white",
             borderColor: "border-soft-lavender",
-            textColor: "text-dark-grayish-blue"
+            textColor: "text-dark-grayish-blue",
+            shadow: "shadow-card-light"
         },
         filter: {
             textColor: "text-muted-gray",
@@ -31,7 +32,8 @@ export const themeConfig = {
         todo: {
             backgroundColor: "bg-dark-desaturated-blue",
             borderColor: "border-deep-navy",
-            textColor: "text-light-lavender"
+            textColor: "text-light-lavender",
+            shadow: "shadow-card-dark"
         },
         filter: {
             textColor: "text-desaturated-blue",
