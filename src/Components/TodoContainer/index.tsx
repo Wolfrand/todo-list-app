@@ -12,7 +12,7 @@ const TodoContainer = ({children}: TodoContainerProps) => {
     const { theme } = context;
 
     return (
-        <main className={`${themeConfig[theme].layout.backgroundColor} h-screen`}>
+        <main className={`h-screen ${themeConfig[theme].layout.backgroundColor}`}>
             <div className={`${themeConfig[theme].layout.heroClass}`}>
                 <div className="max-w-175 m-auto p-8">
                     {children}
