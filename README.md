@@ -33,6 +33,15 @@ npm install
 npm run dev
 ```
 
+## What I Learned
+ 
+- **Context API** — how to share state across components without prop drilling
+- **Tailwind CSS** — utility-first styling and how to build layouts quickly with it
+- **Mobile-first workflow** — designing for small screens first, then scaling up with responsive utilities
+- **useState** — managing local component state effectively
+- **Custom hooks** — how to extract and reuse logic with the `useTodo` hook
+- **Functional state updates with `prev`** — using the previous state value to safely update state based on the current one
+
 ## How It Works
 
 All task logic lives inside the `useTodo` custom hook, which exposes:
