@@ -2,6 +2,8 @@
 
 A solution to the [Todo app challenge](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW) on [Frontend Mentor](https://www.frontendmentor.io). Built with React, TypeScript, and Tailwind CSS.
 
+![App demo](./public/images/gifTodo.gif)
+
 ## Features
 
 - **Add tasks** — Type in the form and submit to add new tasks to the list
