@@ -7,6 +7,7 @@ A solution to the [Todo app challenge](https://www.frontendmentor.io/challenges/
 - **Add tasks** — Type in the form and submit to add new tasks to the list
 - **Filter tasks** — Switch between `All`, `Active`, and `Completed` views
 - **Complete tasks** — Mark tasks as done with a single click
+- **Delete tasks** — Remove a specific task with a delete button
 - **Clear completed** — Remove all completed tasks at once
 - **Light/Dark theme** — Toggle between themes, with distinct shadow styles for each
 
@@ -50,4 +51,5 @@ All task logic lives inside the `useTodo` custom hook, which exposes:
 - A function to add new tasks
 - A function to toggle task completion
 - A function to change the active filter (`all`, `active`, `completed`)
+- A function to delete a specific task
 - A function to clear all completed tasks
