@@ -3,6 +3,7 @@ import { themeConfig } from "../../contexts/theme";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { useContext } from "react";
 import IconCheck from "/images/icon-check.svg"
+import IconCross from "/images/icon-cross.svg"
 
 interface TodoListProps {
     todoList: Todo[];
@@ -10,9 +11,10 @@ interface TodoListProps {
     setFilter: (filter: "all" | "active" | "completed") => void;
     filter: "all" | "active" | "completed";
     clearCompleted: () => void;
+    removeTodo: (id: number) => void;
 };
 
-const TodoList = ({ todoList, toggleTodoCompleted, setFilter, filter, clearCompleted }: TodoListProps) => {
+const TodoList = ({ todoList, toggleTodoCompleted, setFilter, filter, clearCompleted, removeTodo }: TodoListProps) => {
     const context = useContext(ThemeContext);
 
     const { theme } = context;
@@ -30,7 +32,7 @@ const TodoList = ({ todoList, toggleTodoCompleted, setFilter, filter, clearCompl
                         <li
                             key={todo.id}
                             className={
-                                `flex items-center p-5 sm:text-lg border-b gap-4
+                                `flex items-center pt-5 pb-5 pl-6.5 pr-6.5 sm:text-lg border-b gap-4 group
                                 ${themeConfig[theme].todo.borderColor}
                             `}
                         >
@@ -58,6 +60,13 @@ const TodoList = ({ todoList, toggleTodoCompleted, setFilter, filter, clearCompl
                             >
                                 {todo.text}
                             </p>
+
+                            <button 
+                                className="sm:opacity-0 sm:group-hover:opacity-100 sm:transition-opacity sm:duration-300 sm:cursor-pointer ml-auto"
+                                onClick={() => removeTodo(todo.id)}
+                            >
+                                <img src={IconCross} alt="Excluir ToDo" />
+                            </button>
                         </li>
                     ))}
                 </ul>

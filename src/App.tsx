@@ -5,7 +5,7 @@ import TodoList from "./components/TodoList";
 import { useTodo } from "./hooks/useTodo";
 
 function App() {
-  const { addTodo, toggleTodoCompleted, filteredTodos, clearCompleted, setFilter, filter } = useTodo();
+  const { addTodo, toggleTodoCompleted, filteredTodos, clearCompleted, setFilter, filter, removeTodo } = useTodo();
 
   return (
     <TodoContainer>
@@ -19,6 +19,7 @@ function App() {
         setFilter={setFilter}
         filter={filter}
         clearCompleted={clearCompleted}
+        removeTodo={removeTodo}
       >
       </TodoList>
     </TodoContainer>

@@ -20,7 +20,7 @@ const TodoForm = ({ addTodo }: TodoInputProps) => {
             ></span>
 
             <input
-                className={`w-full rounded-md pl-16 pt-6.5 pb-6 sm:pt-7.25 outline-none text-lg placeholder:text-[1rem] sm:placeholder:text-lg
+                className={`w-full rounded-md pl-16 pt-6.5 pb-6 sm:pt-7.25 outline-none text-lg placeholder:text-[1rem] sm:placeholder:text-lg caret-bright-blue
                     ${themeConfig[theme].todo.backgroundColor}
                     ${themeConfig[theme].todo.textColor}
                 `}
